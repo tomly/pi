@@ -1,0 +1,19 @@
+<h1 id="title">最近IP列表</h1>
+<hr>
+
+<table border="1">
+<tr>
+  <th>id</th>
+  <th>ip名</th>
+  <th>ip</th>
+  <th>添加时间</th>
+</tr>
+{% for address in ip_list %}
+<tr>
+    <td>{{ address.id }}</td>
+  <td>{{ address.name }}</td>
+  <td>{{ address.ip }}</td>
+  <td>{{ address.time }}</td>
+</tr>
+{% endfor %}
+</table>
